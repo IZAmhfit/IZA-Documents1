@@ -8,11 +8,19 @@
 
 import SwiftUI
 
+///
 struct ContentView: View {
+    //
     var body: some View {
-        Text("Hello, World!")
+        //
+        TabView {
+            //
+            DirectoryView(kind: .localDocuments).tag(0).tabItem { Text("Local") }
+            DirectoryView(kind: .cloudDocuments).tag(1).tabItem { Text("Cloud") }
+        }
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

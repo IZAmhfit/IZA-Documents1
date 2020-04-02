@@ -14,6 +14,14 @@
 		6C13077D2435DB50001CEBC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C13077C2435DB50001CEBC9 /* Assets.xcassets */; };
 		6C1307802435DB50001CEBC9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C13077F2435DB50001CEBC9 /* Preview Assets.xcassets */; };
 		6C1307832435DB50001CEBC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C1307812435DB50001CEBC9 /* LaunchScreen.storyboard */; };
+		6C13078C2435DB99001CEBC9 /* Simple-UI-Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C13078B2435DB99001CEBC9 /* Simple-UI-Document.swift */; };
+		6C5580782436271500E77760 /* CentralDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5580772436271500E77760 /* CentralDB.swift */; };
+		6C63E1562435E4E300424C31 /* ExampleDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C63E1552435E4E300424C31 /* ExampleDocument.swift */; };
+		6C63E1592435E56300424C31 /* DocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C63E1582435E56300424C31 /* DocumentView.swift */; };
+		6C63E15B2435E5A300424C31 /* ExampleDocumentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C63E15A2435E5A300424C31 /* ExampleDocumentModel.swift */; };
+		6C63E15F2435E69A00424C31 /* DirectoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C63E15E2435E69A00424C31 /* DirectoryView.swift */; };
+		6C63E1612435FC1000424C31 /* CreateNewDocumentDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C63E1602435FC1000424C31 /* CreateNewDocumentDialog.swift */; };
+		6C63E16324360B6D00424C31 /* FileManager-extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C63E16224360B6D00424C31 /* FileManager-extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,15 @@
 		6C13077F2435DB50001CEBC9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6C1307822435DB50001CEBC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C1307842435DB50001CEBC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C13078B2435DB99001CEBC9 /* Simple-UI-Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Simple-UI-Document.swift"; sourceTree = "<group>"; };
+		6C558075243626CF00E77760 /* IZA-Documents1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "IZA-Documents1.entitlements"; sourceTree = "<group>"; };
+		6C5580772436271500E77760 /* CentralDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralDB.swift; sourceTree = "<group>"; };
+		6C63E1552435E4E300424C31 /* ExampleDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleDocument.swift; sourceTree = "<group>"; };
+		6C63E1582435E56300424C31 /* DocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentView.swift; sourceTree = "<group>"; };
+		6C63E15A2435E5A300424C31 /* ExampleDocumentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleDocumentModel.swift; sourceTree = "<group>"; };
+		6C63E15E2435E69A00424C31 /* DirectoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryView.swift; sourceTree = "<group>"; };
+		6C63E1602435FC1000424C31 /* CreateNewDocumentDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewDocumentDialog.swift; sourceTree = "<group>"; };
+		6C63E16224360B6D00424C31 /* FileManager-extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +75,11 @@
 		6C1307722435DB4E001CEBC9 /* IZA-Documents1 */ = {
 			isa = PBXGroup;
 			children = (
+				6C558076243626FC00E77760 /* Central Data Manager */,
+				6C558075243626CF00E77760 /* IZA-Documents1.entitlements */,
+				6C63E15D2435E68900424C31 /* Main Views */,
+				6C63E1572435E54B00424C31 /* Views - Single Document */,
+				6C13078A2435DB79001CEBC9 /* Simple Document, Model */,
 				6C1307732435DB4E001CEBC9 /* AppDelegate.swift */,
 				6C1307752435DB4E001CEBC9 /* SceneDelegate.swift */,
 				6C13077A2435DB4E001CEBC9 /* ContentView.swift */,
@@ -76,6 +98,42 @@
 				6C13077F2435DB50001CEBC9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6C13078A2435DB79001CEBC9 /* Simple Document, Model */ = {
+			isa = PBXGroup;
+			children = (
+				6C13078B2435DB99001CEBC9 /* Simple-UI-Document.swift */,
+				6C63E15A2435E5A300424C31 /* ExampleDocumentModel.swift */,
+				6C63E1552435E4E300424C31 /* ExampleDocument.swift */,
+				6C63E16224360B6D00424C31 /* FileManager-extensions.swift */,
+			);
+			name = "Simple Document, Model";
+			sourceTree = "<group>";
+		};
+		6C558076243626FC00E77760 /* Central Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				6C5580772436271500E77760 /* CentralDB.swift */,
+			);
+			name = "Central Data Manager";
+			sourceTree = "<group>";
+		};
+		6C63E1572435E54B00424C31 /* Views - Single Document */ = {
+			isa = PBXGroup;
+			children = (
+				6C63E1582435E56300424C31 /* DocumentView.swift */,
+			);
+			name = "Views - Single Document";
+			sourceTree = "<group>";
+		};
+		6C63E15D2435E68900424C31 /* Main Views */ = {
+			isa = PBXGroup;
+			children = (
+				6C63E15E2435E69A00424C31 /* DirectoryView.swift */,
+				6C63E1602435FC1000424C31 /* CreateNewDocumentDialog.swift */,
+			);
+			name = "Main Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,10 +207,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C63E15F2435E69A00424C31 /* DirectoryView.swift in Sources */,
 				6C1307742435DB4E001CEBC9 /* AppDelegate.swift in Sources */,
 				6C1307792435DB4E001CEBC9 /* IZA_Documents1.xcdatamodeld in Sources */,
+				6C63E16324360B6D00424C31 /* FileManager-extensions.swift in Sources */,
+				6C63E1612435FC1000424C31 /* CreateNewDocumentDialog.swift in Sources */,
+				6C5580782436271500E77760 /* CentralDB.swift in Sources */,
 				6C13077B2435DB4E001CEBC9 /* ContentView.swift in Sources */,
+				6C13078C2435DB99001CEBC9 /* Simple-UI-Document.swift in Sources */,
 				6C1307762435DB4E001CEBC9 /* SceneDelegate.swift in Sources */,
+				6C63E1562435E4E300424C31 /* ExampleDocument.swift in Sources */,
+				6C63E15B2435E5A300424C31 /* ExampleDocumentModel.swift in Sources */,
+				6C63E1592435E56300424C31 /* DocumentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +354,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "IZA-Documents1/IZA-Documents1.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"IZA-Documents1/Preview Content\"";
 				DEVELOPMENT_TEAM = 6DTJGF3D7H;
@@ -308,6 +375,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "IZA-Documents1/IZA-Documents1.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"IZA-Documents1/Preview Content\"";
 				DEVELOPMENT_TEAM = 6DTJGF3D7H;
