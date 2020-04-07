@@ -8,21 +8,6 @@
 
 import SwiftUI
 
-//
-class Dosom  {
-    //
-    var kod: (()->())? = nil
-    
-    //
-    func akce(kod: @escaping ()->()) {
-        //
-        self.kod = kod
-    }
-    
-    //
-    init(kod: (()->())? = nil) { self.kod = kod }
-}
-
 ///
 struct ContentView: View {    
     //
@@ -32,7 +17,6 @@ struct ContentView: View {
             //
             DirectoryView(kind: .localDocuments).tag(0).tabItem { Text("Local") }
             DirectoryView(kind: .cloudDocuments).tag(1).tabItem { Text("Cloud") }
-            Button("eeee") { self.akce() }.tag(2)
         }
     }
 }
